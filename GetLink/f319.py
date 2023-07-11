@@ -15,7 +15,7 @@ ssl_context.check_hostname = False
 ssl_context.verify_mode = ssl.CERT_NONE
 class GetInformation(): 
     def __init__(self, i): 
-        self.ListTopic = pd.read_csv('link{}.csv'.format(i))
+        self.ListTopic = pd.read_csv('TopicLink{}.csv'.format(i))
         self.df_post = pd.DataFrame()
         self.df_post['title'] = []
         self.df_post['author'] = []
